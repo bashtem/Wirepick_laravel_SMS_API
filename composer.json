@@ -3,7 +3,7 @@
     "description": "You can send sms using wirepick API",
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "6.4.0"
+        "guzzlehttp/guzzle": "6.3.3"
     },
     "authors": [
         {
