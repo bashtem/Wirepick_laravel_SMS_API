@@ -3,20 +3,26 @@
 namespace Wirepick\Smsapi;
 
 use Illuminate\Http\Request;
+use yii\httpclient\Client;
 
 
 class SmsController extends Controller
 {
     public function send(Array $parameters){
-        $request = new GuzzleHttp\Client();
-        $res = $request->request('GET', 'https://sms.wirepick.com/httpsms/Send', [
-            'client' => $parameters['client'],
+
+        $client = new Client();
+        $response = $client->createRequest()
+            ->setMethod('GET')
+            ->setUrl('https://sms.wirepick.com/httpsms/Send')
+            ->setData([
+                'client' => $parameters['client'],
              'password' => $parameters['password'],
               'affiliate' =>$parameters['affiliate'],
                'phone' => $parameters['phone'],
                 'text'=>$parameters['text'], 
                 'from' => $parameters['senderId']
-        ]);
-        return $res;
+            ])
+            ->send();
+        return $response;
     }
 }
