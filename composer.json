@@ -14,7 +14,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "wirepick\\smsapi\\src\\WirepickSmsApiServiceProvider"
+                "Wirepick\\Smsapi\\WirepickSmsApiServiceProvider"
             ]
         }
     },
