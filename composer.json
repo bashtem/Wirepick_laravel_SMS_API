@@ -1,0 +1,21 @@
+{
+    "name": "wirepick/smsapi",
+    "description": "You can send sms using wirepick API",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.4"
+    },
+    "authors": [
+        {
+            "name": "Wirepick",
+            "email": "support@wirepick.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "wirepick\\smsapi\\WirepickSmsApiServiceProvider"
+            ]
+        }
+    }
+}
