@@ -17,10 +17,5 @@
                 "Wirepick\\Smsapi\\WirepickSmsApiServiceProvider"
             ]
         }
-    },
-    "autoload": {
-        "psr-4": {
-            "Wirepick\\Smaapi\\": "src/"
-        }
     }
 }
