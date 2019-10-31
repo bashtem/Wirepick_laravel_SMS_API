@@ -11,6 +11,7 @@
             "email": "support@wirepick.com"
         }
     ],
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
