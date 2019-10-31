@@ -13,7 +13,7 @@ class WirepickSmsApiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('wirepick\smsapi\SmsController');
+        $this->app->make('Wirepick\Smsapi\SmsController');
     }
 
     /**
